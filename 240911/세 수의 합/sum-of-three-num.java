@@ -30,7 +30,14 @@ public class Main {
                 if(sum == k)
                 {
                     count++;
-                    left++;
+
+                    if(arr[left] == arr[left+1])
+                        left++;
+                    else
+                    {
+                        left++;
+                        right--;
+                    }
                 }
 
                 else if(sum < k)
