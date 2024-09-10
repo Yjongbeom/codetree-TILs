@@ -29,15 +29,24 @@ public class Main {
 
                 if(sum == k)
                 {
-                    count++;
+                    int leftCount = 1, rightCount = 1;
 
-                    if(arr[left] == arr[left+1])
-                        left++;
-                    else
+                    while(left+1 < right && arr[left] == arr[left+1])
                     {
+                        leftCount++;
                         left++;
+                    }
+
+                    while(right-1 > left && arr[right] == arr[right-1])
+                    {
+                        rightCount++;
                         right--;
                     }
+
+                    count += leftCount * rightCount;
+
+                    left++;
+                    right--;
                 }
 
                 else if(sum < k)
