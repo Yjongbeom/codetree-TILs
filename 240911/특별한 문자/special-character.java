@@ -31,7 +31,14 @@ public class Main {
             }
         }
 
-        System.out.println(s.charAt(min_index));
+        if (min_index != 9999999) 
+        {
+            System.out.println(s.charAt(min_index));
+        } 
+        else 
+        {
+            System.out.println("None");
+        }
         
     }
 }
