@@ -29,6 +29,13 @@ public class Main {
 
                 if(sum == k)
                 {
+                    if(arr[left] == arr[right]
+                    {
+                        int num = right - left + 1;
+                        count += (num * (num-1)) / 2;
+                        break;
+                    })
+
                     int leftCount = 1, rightCount = 1;
 
                     while(left+1 < right && arr[left] == arr[left+1])
