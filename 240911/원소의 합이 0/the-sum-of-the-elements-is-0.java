@@ -53,7 +53,7 @@ public class Main {
 
                 if(ab.get(-sum) != null)
                 {
-                    count++;
+                    count += ab.get(-sum);
                 }
             }
         }
