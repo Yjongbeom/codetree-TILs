@@ -6,7 +6,7 @@ public class Main {
         HashMap<Integer, Integer> h = new HashMap<>();
 
         int n = sc.nextInt();
-        int sum = 0;
+        long sum = 0;
 
         for(int i=0; i<n; i++)
         {
