@@ -23,7 +23,7 @@ public class Main {
             s2.add(arr2[i]);
         }
 
-        for(int i=0; i<a; i++)
+        for(int i=0; i<b; i++)
         {
             if(!s1.contains(arr2[i]))
             {
@@ -31,7 +31,7 @@ public class Main {
             }
         }
 
-        for(int i=0; i<b; i++)
+        for(int i=0; i<a; i++)
         {
             if(!s2.contains(arr1[i]))
             {
