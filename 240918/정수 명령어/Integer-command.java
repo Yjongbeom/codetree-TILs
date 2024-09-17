@@ -2,13 +2,13 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        TreeSet<Integer> s = new TreeSet<>();
 
         int n = sc.nextInt();
         
         for(int i=0; i<n; i++)
         {
             int m = sc.nextInt();
+            TreeSet<Integer> s = new TreeSet<>();
 
             for(int j=0; j<m; j++)
             {
