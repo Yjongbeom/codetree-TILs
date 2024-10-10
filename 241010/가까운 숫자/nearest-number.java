@@ -8,7 +8,7 @@ public class Main {
 
         int n = sc.nextInt();
         s.add(0);
-        int min_len = 9999999;
+        int min_len = 999999999;
         
         for(int i=0; i<n; i++)
         {
