@@ -6,29 +6,38 @@ public class Main {
 
         int n = sc.nextInt();
         int m = sc.nextInt();
+        int arr[] = new int[n];
 
-        TreeSet<Integer> chairs = new TreeSet<>();
-        for (int i = 1; i <= m; i++) {
-            chairs.add(i);
+        TreeSet<Integer> h = new TreeSet<>();
+        
+        for(int i=0; i<n; i++)
+        {
+            arr[i] = sc.nextInt();
+        }
+
+        for(int i=0; i<m; i++)
+        {
+            h.add(i+1);
         }
 
         int count = 0;
 
-        for (int i = 0; i < n; i++) {
-            int ai = sc.nextInt();
+        for(int i=0; i<n; i++)
+        {
+            Integer p = h.floor(arr[i]);
 
-            Integer chair = chairs.ceiling(ai);
-            if (chair != null && chair <= ai) 
+            if(p != null)
             {
-                chairs.remove(chair);
+                h.remove(p);
                 count++;
-            } 
-            else 
+            }
+            else
             {
                 break;
             }
         }
 
         System.out.println(count);
-    }
+
+    }   
 }
