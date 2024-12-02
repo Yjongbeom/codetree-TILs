@@ -15,23 +15,29 @@ public class Main {
 
         for(int i=0; i<n; i++)
         {
-            int a = h.first();
-            int b = h.last();
-
-            if(b - a >= m)
+            if(h.size() > 1)
             {
-                if(min > b-a)
+                int a = h.first();
+                int b = h.last();
+
+                if(b - a >= m)
                 {
-                    min = b-a;
+                    if(min > b-a)
+                    {
+                        min = b-a;
+                    }
+                }
+                else
+                {
+                    h.remove(h.last());
                 }
             }
             else
             {
-                h.remove(h.last());
+                min = -1;
             }
         }
 
         System.out.println(min);
-
     }
 }
