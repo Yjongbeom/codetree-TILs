@@ -6,7 +6,7 @@ public class Main {
 
         int n = sc.nextInt();
         int m = sc.nextInt();
-        int min = 999999999999;
+        Integer min = 999999999;
 
         for(int i=0; i<n; i++)
         {
