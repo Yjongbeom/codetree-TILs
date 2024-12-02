@@ -17,8 +17,7 @@ public class Main {
         for (int i = 0; i < n; i++) {
             int ai = sc.nextInt();
 
-            Integer chair = chairs.ceiling(1);
-
+            Integer chair = chairs.ceiling(ai);
             if (chair != null && chair <= ai) 
             {
                 chairs.remove(chair);
