@@ -4,28 +4,28 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        Integer arr[] = new Integer[n];
+        StringBuilder s = new StringBuilder();
+
+        for(int i=0; i<n; i++)
+        {
+            s.append(sc.nextInt());
+        }
+
+        for(int i=0; i<s.length(); i++)
+        {
+            if((i+1) % 5 == 0 && i > 0)
+            {
+                System.out.println(s.substring(i, i+1));
+            }
+            else
+            {
+                System.out.print(s.substring(i, i+1));
+            }
+        }
+
+
         
-        for(int i=0; i<n; i++)
-        {
-            arr[i] = sc.nextInt();
-        }
-
-        for(int i=0; i<n; i++)
-        {
-            if(i%2==1)
-            {
-                String s1 = arr[i-1].toString();
-                String s2 = arr[i].toString();
-
-                System.out.println(s1 + s2);
-            }
-            else if(i==n-1 && i%2 == 0)
-            {
-                String s1 = arr[i].toString();
-                System.out.println(s1);
-            }
-        }
+        
         
     }
 }
