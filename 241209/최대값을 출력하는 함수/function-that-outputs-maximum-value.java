@@ -4,11 +4,12 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int max = -99999999;
 
-        int n = sc.nextInt();
+        int n = 3;
 
         for(int i=0; i<n; i++)
         {
             int a = sc.nextInt();
+
             if(max < a)
             {
                 max = a;
