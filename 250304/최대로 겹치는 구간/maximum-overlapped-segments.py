@@ -11,10 +11,6 @@ for i in range(n):
     for j in range(x1, x2):
         h[j] += 1
 
-answer = 0
+max_num = max(h)
 
-for i in range(110):
-    if answer < h[i]:
-        answer = h[i]
-
-print(answer)
+print(max_num)
