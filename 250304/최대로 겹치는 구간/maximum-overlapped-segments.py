@@ -1,10 +1,20 @@
 n = int(input())
-segments = [tuple(map(int, input().split())) for _ in range(n)]
 
-l = [0 for _ in range(101)]
+h = [0 for i in range(210)]
 
-for a, b in segments:
-    for i in range(a, b+1):
-        l[i] += 1
+for i in range(n):
+    x1, x2 = map(int, input().split())
 
-print(max(l))
+    x1 += 100
+    x2 += 100
+
+    for j in range(x1, x2):
+        h[j] += 1
+
+answer = 0
+
+for i in range(110):
+    if answer < h[i]:
+        answer = h[i]
+
+print(answer)
